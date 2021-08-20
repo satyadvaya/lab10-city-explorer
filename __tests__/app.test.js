@@ -1,4 +1,3 @@
-/* eslint-disable no-undef */
 require('dotenv').config();
 
 const { execSync } = require('child_process');
@@ -29,7 +28,7 @@ describe('app routes', () => {
       return client.end(done);
     });
 
-    test('returns animals', async() => {
+    test.skip('returns animals', async() => {
 
       const expectation = [
         {
